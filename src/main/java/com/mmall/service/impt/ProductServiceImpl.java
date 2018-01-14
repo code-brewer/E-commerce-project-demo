@@ -9,6 +9,7 @@ import com.mmall.dao.CategoryMapper;
 import com.mmall.dao.ProductMapper;
 import com.mmall.pojo.Category;
 import com.mmall.pojo.Product;
+import com.mmall.service.ICategoryService;
 import com.mmall.vo.ProductDetailVo;
 import com.mmall.service.IProductService;
 import com.mmall.util.DateTimeUtil;
@@ -33,6 +34,8 @@ public class ProductServiceImpl implements IProductService{
 
     @Autowired
     private CategoryMapper categoryMapper;
+
+
 
     public ServerResponse saveOrUpdateProduct(Product product){
         if (product != null){
